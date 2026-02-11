@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<!-- meta tags and title -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Measuring Units</title>
+
+	<!-- external and internal CSS -->
+	<link rel="stylesheet" href="styles.css" media="all">
+	<style>
+		textarea{
+            border: none;
+            padding: 5px;
+            background-color: lightgray;
+        }
+	</style>
+
+
+</head>
+<body>
+    <h1>Code Log 2: CSS Measuring Units</h1>
+    <hr>
+    <h2> What is the difference between absolute and relative CSS length units?</h2>
+        <p>
+            In CSS, absolute units and relative units are different in how they define size. Absolute units have a fixed and exact size, and they do not depend on other elements or the screen size. 
+            Because of this, they remain consistent and do not change automatically. In contrast, relative units are based on another value, such as a parent element, the root element, or the viewport size. 
+            This means their size can change depending on the context.
+        </p>
+        
+        <hr>
+    <h2> px, pt</h2>
+        <p>
+            The unit <strong>px</strong> stands for <strong>pixels</strong>. It is commonly used in web design and represents a fixed unit on the screen. It is considered an absolute unit because it does not depend on other elements. 
+            The unit <strong>pt</strong> stands for <strong>points</strong> and is mostly used in print design. One point equals 1/72 of an inch. While px is more common for screens, pt is more common for printed materials.
+        </p>
+    
+
+
+    <h2> vmax, vmin</h2>
+
+        <p>
+            The unit <strong>vmax</strong> stands for <strong>viewport maximum</strong>. It is a relative unit based on the viewport size. 1vmax equals 1% of the larger value between the viewport width and height. 
+            It scales according to the larger dimension of the screen.
+            The unit <strong>vmin</strong> stands for <strong>viewport minimum</strong>. It is also a relative unit based on the viewport size. 1vmin equals 1% of the smaller value between the viewport width and height. 
+            It scales according to the smaller dimension of the screen.
+        </p>
+
+
+    <h2> in, pc</h2>
+
+        <p>
+            The unit <strong>in</strong> stands for <strong>inches</strong> and is an absolute unit based on physical measurement. 
+            It is mostly used for print layouts. The unit <strong>pc</strong> stands for <strong>picas</strong>, and 1 pica equals 1/6th of 1 inches. Like inches, picas are also more common in print design rather than web design. 
+            These units are precise but not commonly used for responsive layouts.
+        </p>
+
+    
+
+</body>
+</html>
+
