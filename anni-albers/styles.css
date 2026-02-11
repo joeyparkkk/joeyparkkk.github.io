@@ -2,36 +2,43 @@
 
 /*by default, let's lay out the first index.html file*/
 
-main{
+main {
     width: 80%;
     max-width: 1100px;
     margin: 0 auto;
 }
 
-h1{
+h1 {
     font-size: 3rem;
 }
 
-h2{
+h2 {
     font-size: 0.75rem;
     font-style: italic;
 }
 
-p{
+p {
     font-size: 1.2rem;
     line-height: 2.5rem;
     width: 50%;
 }
 
-p.callout{
+p.callout {
     font-size: 2rem;
     line-height: 2.2rem;
-    font-weight: italic;
-    float:right;
- 
+    font-style: italic;
+    float: right;
+    text-align: right;
+    padding-left: 2em;
+    margin-top: 0;
+
 }
 
 #row1 p,
-#row3 p{
+#row3 p {
     margin-left: calc(100% * 1/6);
+}
+
+#row4 p{
+    margin-left: calc(100% * 2/6);
 }
