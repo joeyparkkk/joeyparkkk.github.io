@@ -122,6 +122,8 @@ body#secondLayout main {
 
 #secondLayout .callout {
     padding-left: 0;
+    float: none;
+    text-align: left;
 }
 
 #secondLayout section h1{
