@@ -80,7 +80,7 @@ body#secondLayout main {
         'p9 p9 p9 c4 c4 c4'
         '. p10 p10 p10 . .'
         '. . p11 p11 p11 .'
-        'about about about about about about about';
+        'about about about about about about';
 
 
 }
@@ -104,7 +104,7 @@ body#secondLayout main {
 #secondLayout #callout3 { grid-area: c3; }
 #secondLayout #callout4 { grid-area: c4; }
 
-#secondLayout #aboutRow { grid-area: about; }
+#secondLayout #aboutAuthor { grid-area: about; }
 
 /* override the baseline p styles from above*/
 #secondLayout p{
