@@ -40,7 +40,7 @@ header {
   width: calc(100vw - 2em);
   
 }
-
+/* put the rest of the mobile baseline layout*/
 @media screen and (orientation: landscape){
 
   #rhodiepic{
