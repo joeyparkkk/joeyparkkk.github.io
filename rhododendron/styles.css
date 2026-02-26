@@ -46,7 +46,7 @@ header {
 
 #tagline {
   display: none;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 main {
@@ -134,4 +134,5 @@ section li {
   margin: 0 0 0.3em 0;
   font-size: 1.4em;
   line-height: 1.6;
+}
 }
