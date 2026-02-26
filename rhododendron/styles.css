@@ -44,9 +44,9 @@ header {
 
 }
 
-#latinname,
 #tagline {
   display: none;
+  font-size: 1em;
 }
 
 main {
@@ -70,7 +70,9 @@ section h2 {
 
 section p {
   margin: 0 0 0.6em 0;
-  line-height: 1.5;
+  font-size: 0.9em;
+  line-height: 1.6;
+  
 }
 
 section ul {
@@ -80,7 +82,8 @@ section ul {
 
 section li {
   margin: 0 0 0.3em 0;
-  line-height: 1.4;
+  font-size: 0.9em;
+  line-height: 1.6;
 }
 
 /* put the rest of the mobile baseline layout*/
@@ -121,4 +124,14 @@ section li {
     width: calc(50vw - 2em);
     text-align: center;
   }
+
+  section p {
+  margin: 0 0 0.6em 0;
+  font-size: 1.4em;
+  line-height: 1.6;
+}
+  section li {
+  margin: 0 0 0.3em 0;
+  font-size: 1.4em;
+  line-height: 1.6;
 }
