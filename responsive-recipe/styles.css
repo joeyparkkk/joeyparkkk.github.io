@@ -1,6 +1,6 @@
+/* basic page style */
 
-body 
-{
+body {
     font-family: Arial, sans-serif;
     margin: 20px;
     line-height: 1.6;
@@ -8,124 +8,224 @@ body
     color: #2f241f;
 }
 
-img 
-{
+img {
     max-width: 100%;
     height: auto;
     display: block;
 }
 
+main {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
 
-/* header image */
 
-#topimage img 
-{
+/* header */
+
+header {
+    margin-bottom: 40px;
+}
+
+#topimage img {
     width: 100%;
 }
 
-
-/* recipeinfo */
-
-#recipeinfo 
-{
+#recipeinfo {
     margin-top: 10px;
 }
 
-#recipeinfo p 
-{
+#recipeinfo p {
     margin: 4px 0;
 }
 
-
-/* title */
-
-#title 
-{
+#title {
     margin-top: 20px;
-    margin-bottom: 30px;
 }
 
-h1 
-{
+h1 {
     margin-bottom: 10px;
+}
+
+#author {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+#description {
+    margin-top: 0;
 }
 
 
 /* ingredients */
 
-#ingredients 
-{
+#ingredients {
     margin-top: 30px;
 }
 
-.ingredients 
-{
+#ingredients h2 {
+    margin-bottom: 20px;
+}
+
+.ingredients {
     background-color: #fffaf5;
     padding: 20px;
     border-radius: 12px;
+    margin-bottom: 20px;
 }
 
-.ingredients ul 
-{
+.ingredients ul {
     padding-left: 20px;
 }
 
-#ingredientimage img 
-{
-    max-width: 400px;
-    margin-top: 20px;
+#ingredientimage {
+    text-align: center;
 }
 
+#ingredientimage img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
 
-/* directions */
+/* instructions */
 
-#instructions 
-{
+#instructions {
     margin-top: 40px;
 }
 
-#note 
-{
+#note {
     margin-bottom: 10px;
 }
 
-/* image under note */
-
-#instructions>img 
-{
-    width: 250px;
+#instructions > img {
+    width: 300px;
     margin-bottom: 20px;
-    padding: 20px;
 }
 
-
-/* step cards */
-
-.step 
-{
+.step {
     background-color: #fffaf5;
     padding: 20px;
     border-radius: 12px;
     margin-bottom: 20px;
 }
 
-.step img 
-{
-    width: 250px;
+.step img {
+    width: 220px;
     margin-bottom: 10px;
 }
 
-.step p 
-{
+.step p {
     margin: 0;
 }
 
 
 /* footer */
 
-footer 
-{
+footer {
     margin-top: 40px;
     font-size: 0.9rem;
 }
 
+
+/* tablet layout */
+
+@media (min-width: 700px) {
+
+    #ingredients {
+        display: flex;
+        gap: 30px;
+        align-items: flex-start;
+    }
+
+    .step {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+}
+
+
+/* desktop layout */
+
+@media (min-width: 900px) {
+
+    header {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        gap: 30px;
+        align-items: start;
+    }
+
+    #topimage {
+        grid-column: 1;
+        grid-row: 1 / 3;
+    }
+
+    #recipeinfo {
+        grid-column: 2;
+        grid-row: 1;
+        margin-top: 0;
+    }
+
+    #title {
+        grid-column: 2;
+        grid-row: 2;
+        margin-top: 0;
+        
+    }
+
+    #title h1 {
+        margin-top: 0;
+    }
+
+    #ingredients {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: start;
+    }
+
+    #ingredients h2 {
+        grid-column: 1 / 3;
+    }
+
+    .ingredients {
+        grid-column: 1 / 2;
+    }
+
+    #ingredientimage {
+        grid-column: 2 / 3;
+    }
+
+    #ingredientimage img {
+        max-width: 100%;
+        margin-top: 0;
+    }
+
+    #kadaifimage img {
+        max-width: 500px;
+    }
+
+    .steps-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    .step {
+        display: block;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .step img {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+}
