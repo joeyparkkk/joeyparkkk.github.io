@@ -254,3 +254,173 @@ footer {
     }
 
 }
+
+
+:root {
+    --nav-height: 3.4rem;
+    --nav-bkgd-color: #fffaf5;
+    --nav-text-color: #2f241f;
+    --nav-hover-bkgd-color: #f0e7df;
+    --nav-hover-text-color: #2f241f;
+    --nav-border-color: #e6d8cb;
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    min-height: var(--nav-height);
+    background-color: var(--nav-bkgd-color);
+    border: 1px solid var(--nav-border-color);
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+#navBurger {
+    position: relative;
+    display: block;
+    font-size: 2rem;
+    color: var(--nav-text-color);
+    padding: 0.2em 0 0 0.5em;
+    max-height: 2.5rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav ul {
+    position: relative;
+    background-color: var(--nav-bkgd-color);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    border-radius: 0 0 12px 12px;
+}
+
+nav.clicked > ul {
+    max-height: 90vh;
+}
+
+nav > ul > li {
+    position: relative;
+    display: block;
+    margin: 0.7rem 1rem;
+}
+
+nav > ul > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+nav > ul > li > a::after {
+    position: absolute;
+    content: "⌄";
+    right: 0.5rem;
+    top: 0.3rem;
+    color: inherit;
+    font-size: 110%;
+}
+
+nav > ul > li:first-child > a::after {
+    content: "";
+}
+
+nav > ul > li > ul {
+    margin: 0 0 0 1rem;
+    background-color: inherit;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+nav > ul > li.clicked > ul {
+    max-height: 90vh;
+}
+
+nav > ul > li > ul > li {
+    padding: 0.45rem 0 0.45rem 0.5rem;
+    border-radius: 8px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--nav-text-color);
+}
+
+nav > ul > li > ul > li:hover {
+    background-color: var(--nav-hover-bkgd-color);
+}
+
+nav > ul > li > ul > li:hover a {
+    color: var(--nav-hover-text-color);
+}
+
+/* ----- desktop / wider screens ----- */
+@media screen and (min-width: 700px) {
+
+    #navBurger {
+        display: none;
+    }
+
+    nav {
+        padding: 0.4rem 0.8rem;
+    }
+
+    nav > ul {
+        max-height: none;
+        overflow: visible;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    nav > ul > li {
+        float: none;
+        margin: 0.2rem 0.4rem;
+    }
+
+    nav > ul > li > a {
+        padding: 0.6rem 0.8rem;
+        border-radius: 8px;
+    }
+
+    nav > ul > li > a:hover {
+        background-color: var(--nav-hover-bkgd-color);
+    }
+
+    nav > ul > li > ul {
+        margin: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        min-width: 220px;
+        background-color: var(--nav-bkgd-color);
+        border: 1px solid var(--nav-border-color);
+        border-radius: 12px;
+        padding: 0.5rem;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    }
+
+    nav > ul > li.clicked > ul {
+        display: block;
+        visibility: visible;
+        max-height: none;
+    }
+
+    nav > ul > li > ul li {
+        margin: 0;
+        white-space: nowrap;
+    }
+
+    nav > ul > li > a::after {
+        content: "";
+    }
+}
