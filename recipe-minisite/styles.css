@@ -427,7 +427,7 @@ nav > ul > li > ul > li:hover a {
 }
 #instructions .step img {
     width: 100%;
-    height: 220px;
+    height: 300px;
     object-fit: cover;
     border-radius: 8px;
 }
