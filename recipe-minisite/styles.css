@@ -1,0 +1,256 @@
+/* basic page style */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    background-color: #f7f3ee;
+    color: #2f241f;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+main {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* header */
+
+header {
+    margin-bottom: 40px;
+}
+
+#topimage img {
+    width: 100%;
+}
+
+#recipeinfo {
+    margin-top: 10px;
+}
+
+#recipeinfo p {
+    margin: 4px 0;
+}
+
+#title {
+    margin-top: 20px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+#author {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+#description {
+    margin-top: 0;
+}
+
+
+/* ingredients */
+
+#ingredients {
+    margin-top: 30px;
+}
+
+#ingredients h2 {
+    margin-bottom: 20px;
+}
+
+.ingredients {
+    background-color: #fffaf5;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.ingredients ul {
+    padding-left: 20px;
+}
+
+#ingredientimage {
+    text-align: center;
+}
+
+#ingredientimage img {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+/* instructions */
+
+#instructions {
+    margin-top: 40px;
+}
+
+#note {
+    margin-bottom: 10px;
+}
+
+#kadaifimage img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.step {
+    background-color: #fffaf5;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.step img {
+    width: 220px;
+    margin-bottom: 10px;
+}
+
+.step p {
+    margin: 0;
+}
+
+
+/* footer */
+
+footer {
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+
+/* tablet layout */
+
+@media (min-width: 700px) {
+
+    .step {
+        display: flex;
+        gap: 20px;
+    }
+
+    #title {
+        margin-top: 50px;
+    }
+
+    #title h1 {
+        font-size: 2rem;
+    }
+
+    #author {
+        font-size: 1.1rem;
+    }
+
+    #description {
+        font-size: 1.2rem;
+    }
+
+}
+
+
+/* desktop layout */
+
+@media (min-width: 900px) {
+
+    header {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        gap: 30px;
+        align-items: start;
+    }
+
+    #topimage {
+        grid-column: 1;
+        grid-row: 1 / 3;
+    }
+
+    #recipeinfo {
+        grid-column: 2;
+        grid-row: 1;
+        margin-top: 0;
+    }
+
+    #title {
+        grid-column: 2;
+        grid-row: 2;
+        margin-top: 100px;
+    }
+
+    #title h1 {
+        margin-top: 0;
+        font-size: 5rem;
+        line-height: 1;
+    }
+
+    #author {
+        font-size: 1.3rem;
+    }
+
+    #description {
+        font-size: 1.4rem;
+        line-height: 1.8;
+    }
+
+    #ingredients {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    #ingredients h2 {
+        grid-column: 1 / 3;
+        grid-row: 1;
+        margin: 0 0 20px 0;
+    }
+
+    .ingredients {
+        grid-column: 1 / 2;
+        grid-row: 2;
+        margin: 0;
+    }
+
+    #ingredientimage {
+        grid-column: 2 / 3;
+        grid-row: 2;
+        text-align: left;
+    }
+
+    #ingredientimage img {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    #kadaifimage img {
+        max-width: 500px;
+    }
+
+    .steps-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    .step {
+        display: block;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .step img {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+}
