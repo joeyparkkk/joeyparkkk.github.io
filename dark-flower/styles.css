@@ -1,0 +1,275 @@
+/*mobile first design for Pacific Rhododendron layout */
+
+* {
+  box-sizing: border-box;
+  font-family: arial, sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+}
+
+#rhodiepic {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("rhododendron.jpg");
+  background-size: cover;
+  background-position: center center;
+
+}
+
+#rhodietitle {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+#rhodietitle h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: white;
+  font-size: 2.8em;
+  width: 100vw;
+  text-align: center;
+
+}
+
+#tagline {
+  display: none;
+  font-size: 1.2em;
+}
+
+main {
+  width: 88%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2em 0;
+  background-color: white;
+}
+
+section {
+  padding: 1.5em 0;
+  border-bottom: 1px solid #eee;
+}
+
+section h2 {
+  margin: 0 0 0.8em 0;
+  font-size: 1.8em;
+  color: #40230f;
+}
+
+section p {
+  margin: 0 0 0.6em 0;
+  font-size: 0.9em;
+  line-height: 1.6;
+  
+}
+
+section ul {
+  margin: 0.6em 0 0 1em;
+  padding: 0;
+}
+
+section li {
+  margin: 0 0 0.3em 0;
+  font-size: 0.9em;
+  line-height: 1.6;
+}
+
+/* put the rest of the mobile baseline layout*/
+@media screen and (orientation: landscape) {
+
+  #rhodiepic {
+    width: 50vw;
+
+  }
+
+  #rhodietitle {
+    width: 50vw;
+    left: 50vw;
+    background-color: rosybrown;
+  }
+
+  #rhodietitle h1 {
+    position: absolute;
+    top: auto;
+    bottom: 1.6em;
+    transform: none;
+    left: 1em;
+    color: #40230f;
+    font-size: 2.5em;
+    width: calc(50vw - 2em);
+    text-align: center;
+
+  }
+
+  #tagline {
+    display: block;
+    position: absolute;
+    top: auto;
+    bottom: 1em;
+    left: 1em;
+    margin: 0;
+    color: #40230f;
+    width: calc(50vw - 2em);
+    text-align: center;
+  }
+
+  section p {
+  margin: 0 0 0.6em 0;
+  font-size: 1.4em;
+  line-height: 1.6;
+}
+  section li {
+  margin: 0 0 0.3em 0;
+  font-size: 1.4em;
+  line-height: 1.6;
+}
+}/*mobile first design for Pacific Rhododendron layout */
+
+* {
+  box-sizing: border-box;
+  font-family: arial, sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+}
+
+#rhodiepic {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("rhododendron.jpg");
+  background-size: cover;
+  background-position: center center;
+
+}
+
+#rhodietitle {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+#rhodietitle h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: white;
+  font-size: 2.8em;
+  width: 100vw;
+  text-align: center;
+
+}
+
+#tagline {
+  display: none;
+  font-size: 1.2em;
+}
+
+main {
+  width: 88%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2em 0;
+  background-color: white;
+}
+
+section {
+  padding: 1.5em 0;
+  border-bottom: 1px solid #eee;
+}
+
+section h2 {
+  margin: 0 0 0.8em 0;
+  font-size: 1.8em;
+  color: #40230f;
+}
+
+section p {
+  margin: 0 0 0.6em 0;
+  font-size: 0.9em;
+  line-height: 1.6;
+  
+}
+
+section ul {
+  margin: 0.6em 0 0 1em;
+  padding: 0;
+}
+
+section li {
+  margin: 0 0 0.3em 0;
+  font-size: 0.9em;
+  line-height: 1.6;
+}
+
+/* put the rest of the mobile baseline layout*/
+@media screen and (orientation: landscape) {
+
+  #rhodiepic {
+    width: 50vw;
+
+  }
+
+  #rhodietitle {
+    width: 50vw;
+    left: 50vw;
+    background-color: rosybrown;
+  }
+
+  #rhodietitle h1 {
+    position: absolute;
+    top: auto;
+    bottom: 1.6em;
+    transform: none;
+    left: 1em;
+    color: #40230f;
+    font-size: 2.5em;
+    width: calc(50vw - 2em);
+    text-align: center;
+
+  }
+
+  #tagline {
+    display: block;
+    position: absolute;
+    top: auto;
+    bottom: 1em;
+    left: 1em;
+    margin: 0;
+    color: #40230f;
+    width: calc(50vw - 2em);
+    text-align: center;
+  }
+
+  section p {
+  margin: 0 0 0.6em 0;
+  font-size: 1.4em;
+  line-height: 1.6;
+}
+  section li {
+  margin: 0 0 0.3em 0;
+  font-size: 1.4em;
+  line-height: 1.6;
+}
+}
