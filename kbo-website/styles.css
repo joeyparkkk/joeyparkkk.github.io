@@ -292,3 +292,31 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* watch page link + list style */
+
+.content-section a {
+  color: #0d3b66;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.content-section a:hover {
+  text-decoration: underline;
+}
+
+.content-section ul {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.content-section li {
+  margin-bottom: 8px;
+}
+
+.content-section h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
