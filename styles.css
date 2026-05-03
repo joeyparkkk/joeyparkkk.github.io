@@ -68,6 +68,10 @@ main {
 	font-size: 2rem;
 }
 
+.full {
+	grid-column: span 2;
+}
+
 /* list */
 ul {
 	padding-left: 20px;
