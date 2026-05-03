@@ -323,3 +323,9 @@ body {
   margin-bottom: 10px;
   font-size: 1.2rem;
 }
+body {
+  background-image: url("baseball background.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
