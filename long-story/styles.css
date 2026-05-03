@@ -90,3 +90,24 @@ p {
 #section8 {
     background-image: url("step 8.png");
 }
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .content {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+}
