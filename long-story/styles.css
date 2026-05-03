@@ -5,8 +5,7 @@
 body {
     margin: 0;
     font-family: "Cinzel", serif;
-    background-color: black;
-    color: white;
+    color: black;
 }
 
 section {
@@ -24,23 +23,18 @@ section {
     overflow: hidden;
 }
 
-section::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.35);
-}
+
+
 
 .content {
     p.content {
-    position: relative;
-    z-index: 2;
-    max-width: 700px;
-    padding: 30px;
-    text-align: center;
-    background-color: #586478;
-    border-radius: 20px;
-}
+        position: relative;
+        z-index: 2;
+        max-width: 700px;
+        padding: 30px;
+        text-align: center;
+        border-radius: 20px;
+    }
 }
 
 .content.is-inview {
