@@ -2,54 +2,76 @@
 <html>
 
 <head>
-
-	<!-- meta tags and title -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Joey's Website</title>
-
-	<!-- external and internal CSS -->
-	<link rel="stylesheet" href="styles.css" media="all">
-	<style>
-		/* in-file CSS here */
-	</style>
-
-	<!-- external and internal JavaScript -->
-	<script src="scripts.js" defer></script>
-	<script>
-		// in-page JavaScript here
-	</script>
-
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-	<h1>Joey Park</h1>
+	<header>
+		<h1>Joey Park</h1>
+		<p>Loving design and creativity</p>
+		<a class="button" href="https://github.com/joeyparkkk/joeyparkkk.github.io">GitHub Repository</a>
+	</header>
 
-	<p>DTC student at WSU</p>
+	<main>
 
-	<a href="https://github.com/joeyparkkk/joeyparkkk.github.io">Joey's GitHub Repository</a>
+		<section id="activities" class="card">
+			<h2>Activities</h2>
+			<ul>
+				<li><a href="/codelogs/code-log-1.html">Code Log 1</a></li>
+				<li><a href="/codelogs/code-log-2.html">Code Log 2</a></li>
+				<li><a href="/codelogs/code-log-3.html">Code Log 3</a></li>
+				<li><a href="/codelogs/code-log-4.html">Code Log 4</a></li>
+				<li><a href="/codelogs/code-log-5.html">Code Log 5</a></li>
+				<li><a href="/codelogs/code-log-6.html">Code Log 6</a></li>
+			</ul>
+		</section>
 
-	<h2>Activities</h2>
-	<ul>
-		<li>Activity 1</li>
-	</ul>
+		<section id="tiny-projects" class="card">
+			<h2>Tiny Projects</h2>
+			<ul>
+				<li><a href="/hello-world.html">Tiny Project 1: GitHub + VS Code Setup</a></li>
+				<li><a href="/favorite-recipe/">Tiny Project 2: Favorite Recipe</a></li>
+				<li><a href="/anni-albers/">Tiny Project 3-1: Layout 1 – Anni Albers</a></li>
+				<li><a href="/anni-albers/index2.html">Tiny Project 3-2: Layout 2 – Anni Albers</a></li>
+				<li><a href="/rhododendron/">Tiny Project 4: Pacific Rhododendron</a></li>
+				<li>
+					<a href="https://www.figma.com/design/3pziG6wNkqArUsI2s6yEeY/VanillaFrame---A-Simple-Wireframe-Kit--Community-?node-id=802-78&t=NJIikbaBA1n5ptZv-1"
+						target="_blank">
+						Tiny Project 5: Recipe Wireframing (Figma)
+					</a>
+				</li>
+				<li><a href="/responsive-recipe/">Tiny Project 6: Responsive Recipe</a></li>
+				<li><a href="/recipe-minisite/">Tiny Project 7: Recipe Mini-Site</a></li>
+				<li><a href="/dark-flower/">Tiny Project 8: Dark Flower</a></li>
+				<li><a href="/long-story/">Tiny Project 9: It's A Long Story</a></li>
+				<li><a href="/">Tiny Project 10: Cleaning Up</a></li>
+			</ul>
+		</section>
 
-	<hr>
+		<section id="major-project" class="card featured">
+			<h2>Major Project</h2>
+			<p>
+				A community resource website for people who want to follow KBO baseball from outside Korea.
+			</p>
+			<a class="button" href="/kbo-website/">View Major Project</a>
+		</section>
 
-	<h2>Tiny Projects</h2>
-	<ul>
-		<li><a href="/favorite-recipe/index.html">Tiny Project 2: Favorite Recipe</a></li>
-		<li><a href="/anni-albers/">Tiny Project 3: Layout 1 – Anni Albers</a></li>
-		<li><a href="/anni-albers/index2.html">Tiny Project 3: Layout 2 – Anni Albers</a></li>
-		<li><a href="/responsive-recipe/">Tiny Project 6: Responsive Recipe</a></li>
-	</ul>
+		<section id="codecademy" class="card">
+			<h2>Codecademy</h2>
+			<ul>
+				<li><a href="https://www.codecademy.com/profiles/method5311389372">My Codecademy Profile</a></li>
+			</ul>
+		</section>
 
-	<hr>
+	</main>
 
-	<h2>Major Project</h2>
-	<a href="">Joey's Major Project</a>
-
+	<footer>
+		<p>Made by Joey Park for DTC 101</p>
+	</footer>
 
 </body>
 
