@@ -423,11 +423,6 @@ footer p {
   transition: 0.2s ease;
 }
 
-.faq-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-}
-
 .faq-card h2 {
   font-size: 1.2rem;
   margin-bottom: 10px;
