@@ -410,6 +410,31 @@ footer p {
   letter-spacing: 0.3px;
 }
 
-.content-section h2 {
-  margin-top: 24px;
+.faq-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.faq-card {
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 16px;
+  padding: 22px;
+  transition: 0.2s ease;
+}
+
+.faq-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.faq-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.faq-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
 }
