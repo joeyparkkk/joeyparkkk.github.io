@@ -387,6 +387,7 @@ body {
   color: #333;
 }
 
+
 @media (max-width: 640px) {
 
 
@@ -407,4 +408,8 @@ footer p {
   color: #6a6a6a;
   line-height: 1.6;
   letter-spacing: 0.3px;
+}
+
+.content-section h2 {
+  margin-top: 24px;
 }
