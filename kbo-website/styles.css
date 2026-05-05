@@ -224,13 +224,12 @@ body {
   transform: translateY(-4px);
 }
 
-.team-card a {
+a.team-card p {
   display: inline-block;
   margin-top: 12px;
   padding: 6px 14px;
 
   color: #0d3b66;
-  text-decoration: none;
   font-weight: 500;
 
   border: 1px solid #0d3b66;
@@ -239,7 +238,7 @@ body {
   transition: 0.2s ease;
 }
 
-.team-card a:hover {
+a.team-card:hover p {
   background-color: #0d3b66;
   color: white;
 }
