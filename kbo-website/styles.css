@@ -482,4 +482,35 @@ footer p {
   .guide-card {
     padding: 22px;
   }
+   body {
+    font-size: 14px;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-description {
+    font-size: 0.9rem;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  .content-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .content-section p {
+    font-size: 0.9rem;
+  }
+
+  .feature-card h3 {
+    font-size: 1rem;
+  }
+
+  .feature-card p {
+    font-size: 0.85rem;
+  }
 }
