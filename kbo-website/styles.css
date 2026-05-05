@@ -454,3 +454,15 @@ footer p {
   height: auto;
   opacity: 0.9;
 }
+
+@media (max-width: 640px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .team-logo img {
+    width: 120px;
+    margin-top: 20px;
+  }
+}
