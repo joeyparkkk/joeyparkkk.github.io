@@ -440,3 +440,17 @@ footer p {
 .contact-form button {
   margin-top: 22px;
 }
+/* each team page logo*/
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+/* logo */
+.team-logo img {
+  width: 150px;
+  height: auto;
+  opacity: 0.9;
+}
